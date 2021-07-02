@@ -1,0 +1,26 @@
+// Copyright (c) roydukkey. All rights reserved.
+// Licensed under the MIT. See LICENSE file in the project root for full license information.
+////
+/// @author roydukkey
+/// @group api
+////
+
+@use 'parameter'
+@use '../internal/invalid-type' as internal
+
+
+///
+/// Returns an error message stating a parameter received the wrong type.
+///
+/// @param {String} $context - The name of the function or mixin issuing the error.
+/// @param {String} $name - The name of the parameter which has received the wrong type.
+/// @param {*} $value - The value which was received.
+/// @param {ArgList} $types - The types which are expected.
+/// @return {String}
+///
+/// @access public
+/// @require internal.invalid-type
+/// @require parameter.parameter
+///
+@function parameter-type($context, $name, $value, $types...)
+	@return parameter.parameter(internal.invalid-type($types, $value), $context, $name)

@@ -1,0 +1,30 @@
+// Copyright (c) roydukkey. All rights reserved.
+// Licensed under the MIT. See LICENSE file in the project root for full license information.
+////
+/// @author roydukkey
+/// @group api
+////
+
+@use 'sass:map'
+@use 'sass:meta'
+@use 'variable'
+@use '../internal/invalid-type' as internal
+
+
+///
+/// Returns an error message stating a variable received the wrong type.
+///
+/// @param {String} $name - The name of the variable which has received the wrong type.
+/// @param {*} $value - The value which was received.
+/// @param {String} $types - The types which are expected.
+/// @param {String} $message [null] - The additional message which describes the issue. Must be passed by name.
+/// @return {String}
+///
+/// @access public
+/// @require internal.invalid-type
+/// @require variable.variable
+///
+@function variable-type($name, $value, $types...)
+	$keywords: meta.keywords($types)
+	$message: if(map.has-key($keywords, 'message'), map.get($keywords, 'message'), null)
+	@return variable.variable(internal.invalid-type($types, $value, $message), $name)
