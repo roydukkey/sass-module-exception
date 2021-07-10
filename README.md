@@ -36,6 +36,9 @@ sass.render({
 
 <dl>
 
+  <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_is-separator-invalid.sass"><code>is-separator-invalid ( $value )</code></a></dt>
+  <dd>Indicates whether a specified value is invalid for a separator parameter.</dd>
+
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_parameter.sass"><code>parameter ( $message, $context, $names... )</code></a></dt>
   <dd>Returns an error message stating an issue with one or more parameters.</dd>
 

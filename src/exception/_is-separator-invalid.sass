@@ -1,0 +1,18 @@
+// Copyright (c) roydukkey. All rights reserved.
+// Licensed under the MIT. See LICENSE file in the project root for full license information.
+////
+/// @author roydukkey
+/// @group api
+////
+
+
+///
+/// Indicates whether a specified value is invalid for a separator parameter.
+///
+///	@param {*} $value - The value which is being validated.
+/// @return {Boolean}
+///
+/// @access public
+///
+@function is-separator-invalid($value)
+	@return $value != space and $value != comma and $value != slash and $value != auto
