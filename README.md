@@ -36,11 +36,17 @@ sass.render({
 
 <dl>
 
+  <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_is-separator-invalid.sass"><code>is-separator-invalid ( $value )</code></a></dt>
+  <dd>Indicates whether a specified value is invalid for a separator parameter.</dd>
+
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_parameter.sass"><code>parameter ( $message, $context, $names... )</code></a></dt>
   <dd>Returns an error message stating an issue with one or more parameters.</dd>
 
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_parameter-type.sass"><code>parameter-type ( $context, $name, $value, $types... )</code></a></dt>
   <dd>Returns an error message stating a parameter received the wrong type.</dd>
+
+  <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_separator.sass"><code>separator ( [$context] )</code></a></dt>
+  <dd>Returns an error message stating a separator parameter or variable received the wrong value.</dd>
 
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_variable.sass"><code>variable ( $message, $names... )</code></a></dt>
   <dd>Returns an error message stating an issue with one or more variables.</dd>
