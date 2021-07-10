@@ -1,0 +1,32 @@
+// Copyright (c) roydukkey. All rights reserved.
+// Licensed under the MIT. See LICENSE file in the project root for full license information.
+////
+/// @author roydukkey
+/// @group api
+////
+
+@use 'parameter'
+@use 'variable'
+
+
+///
+/// Returns an error message stating a separator variable received the wrong value.
+///
+	@overload separator()
+///
+/// Returns an error message stating a separator parameter received the wrong value.
+///
+/// @param {String} $context - The name of the function or mixin issuing the error.
+///
+	@overload separator($context)
+///
+/// @return {String}
+///
+/// @access public
+/// @require parameter.parameter
+/// @require variable.variable
+///
+@function separator($context: null)
+	$message: 'Must be "space", "comma", "slash", or "auto"'
+	$name: 'separator'
+	@return if($context == null, variable.variable($message, $name), parameter.parameter($message, $context, $name))
