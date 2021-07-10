@@ -48,6 +48,9 @@ sass.render({
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_separator.sass"><code>separator ( [$context] )</code></a></dt>
   <dd>Returns an error message stating a separator parameter or variable received the wrong value.</dd>
 
+  <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_validate-index.sass"><code>validate-index ( $context, $name, $value, $iterable )</code></a></dt>
+  <dd>Returns a valid index for the specified iterable; otherwise, an error message stating the reason the index is invalid.</dd>
+
   <dt><a href="//github.com/roydukkey/sass-module-exception/tree/master/src/exception/_variable.sass"><code>variable ( $message, $names... )</code></a></dt>
   <dd>Returns an error message stating an issue with one or more variables.</dd>
 
