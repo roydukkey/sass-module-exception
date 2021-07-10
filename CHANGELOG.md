@@ -7,6 +7,7 @@
 
 * Add `.is-separator-invalid()`
 * Add `.separator()`
+* Add `.validate-index()`
 * Remove `.github` and `.vscode` folders from package
 
 ## 1.0.0
