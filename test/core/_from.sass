@@ -79,7 +79,7 @@
 		$expected: '(a, 1, b, 2, c, 3, new: okay, separator: comma)'
 		@include true.assert-equal($assert, $expected)
 
-	@include true.it('Creates string from an list of lists')
+	@include true.it('Creates string from a list of lists')
 		$level-4-arglist: arglist(a, 1, b, 2, c, 3, $separator: 'comma', $new: 'okay')
 		$level-3-colors: rgba(127, 255, 34, 1), rgba(127, 255, 34, 0.5)
 		$level-3-list: meta.get-function('from', 'src') $level-4-arglist
