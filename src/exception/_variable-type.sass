@@ -8,7 +8,7 @@
 @use 'sass:map'
 @use 'sass:meta'
 @use 'variable'
-@use '../internal/invalid-type' as internal
+@use '../internal/invalid-type'
 
 
 ///
@@ -21,10 +21,10 @@
 /// @return {String}
 ///
 /// @access public
-/// @require internal.invalid-type
+/// @require invalid-type.invalid-type
 /// @require variable.variable
 ///
 @function variable-type($name, $value, $types...)
 	$keywords: meta.keywords($types)
 	$message: if(map.has-key($keywords, 'message'), map.get($keywords, 'message'), null)
-	@return variable.variable(internal.invalid-type($types, $value, $message), $name)
+	@return variable.variable(invalid-type.invalid-type($types, $value, $message), $name)

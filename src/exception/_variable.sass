@@ -6,7 +6,7 @@
 ////
 
 @use 'sass:string'
-@use '../core/join' as core
+@use '../core/join'
 
 
 ///
@@ -17,8 +17,8 @@
 /// @return {String}
 ///
 /// @access public
-/// @require core.join
+/// @require join.join
 ///
 @function variable($message, $names...)
-	$names: core.join($names, ', $')
+	$names: join.join($names, ', $')
 	@return string.unquote('$#{$names}: #{$message}.')

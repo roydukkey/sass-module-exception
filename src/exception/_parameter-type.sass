@@ -6,7 +6,7 @@
 ////
 
 @use 'parameter'
-@use '../internal/invalid-type' as internal
+@use '../internal/invalid-type'
 
 
 ///
@@ -19,8 +19,8 @@
 /// @return {String}
 ///
 /// @access public
-/// @require internal.invalid-type
+/// @require invalid-type.invalid-type
 /// @require parameter.parameter
 ///
 @function parameter-type($context, $name, $value, $types...)
-	@return parameter.parameter(internal.invalid-type($types, $value), $context, $name)
+	@return parameter.parameter(invalid-type.invalid-type($types, $value), $context, $name)

@@ -8,7 +8,7 @@
 @use 'sass:list'
 @use 'sass:meta'
 @use 'sass:string'
-@use '../internal/delimiter' as internal
+@use '../internal/delimiter'
 
 
 ///
@@ -54,7 +54,7 @@
 /// @return {String}
 ///
 /// @access internal
-/// @require internal.delimiter
+/// @require delimiter.delimiter
 /// @require join
 ///
 @function to-string($value, $type)
@@ -62,7 +62,7 @@
 	@if $type == 'map'
 		@return join($value, '; ', $type)
 
-	@return join($value, internal.delimiter($value), $type)
+	@return join($value, delimiter.delimiter($value), $type)
 
 
 ///

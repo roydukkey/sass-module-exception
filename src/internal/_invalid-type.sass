@@ -8,7 +8,7 @@
 @use 'sass:list'
 @use 'sass:meta'
 @use 'sass:string'
-@use '../core/join' as core
+@use '../core/join'
 
 
 ///
@@ -20,7 +20,7 @@
 /// @return {String}
 ///
 /// @access internal
-/// @require core.join
+/// @require join.join
 ///
 @function invalid-type($types, $value, $additional-message: null)
 	$length: list.length($types)
@@ -28,7 +28,7 @@
 	@if $length > 1
 		$types: list.set-nth($types, $length, 'or #{list.nth($types, $length)}')
 
-	$types: core.join($types, if($length > 2, ', ', ' '))
+	$types: join.join($types, if($length > 2, ', ', ' '))
 	$message: '`#{meta.inspect($value)}` is not a #{string.unquote($types)}'
 
 	@if $additional-message

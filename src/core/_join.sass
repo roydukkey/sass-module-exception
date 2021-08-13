@@ -7,7 +7,7 @@
 
 @use 'sass:list'
 @use 'from'
-@use '../internal/delimiter' as internal
+@use '../internal/delimiter'
 
 
 ///
@@ -22,10 +22,10 @@
 ///
 /// @access public
 /// @require _flat
+/// @require delimiter.delimiter
 /// @require from.join
-/// @require internal.delimiter
 ///
-@function join($list, $glue: internal.delimiter($list))
+@function join($list, $glue: delimiter.delimiter($list))
 	@return from.join(_flat($list), $glue, 'list')
 
 
