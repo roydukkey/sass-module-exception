@@ -1,6 +1,6 @@
 {
 	"name": "sass-exception",
-	"description": "This Sass module provides functions to standardize exception messages",
+	"description": "This Sass module provides functions to standardize exception messages and assist with common validation.",
 	"version": "1.1.0",
 	"author": "roydukkey",
 	"license": "MIT",
