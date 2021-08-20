@@ -3,7 +3,7 @@
 [![Release Version](https://img.shields.io/npm/v/sass-exception.svg)](https://www.npmjs.com/package/sass-exception)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This Sass module provides functions to standardize exception messages.
+This Sass module provides functions to standardize exception messages and assist with common validation.
 
 ## Install
 
