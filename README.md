@@ -1,3 +1,8 @@
+**Renamed!**
+This package has been renamed to [`@sass-fairy/exception`](https://github.com/roydukkey/sass-fairy/tree/master/packages/exception#readme) and organised in a mono-repo for better maintainablity, an improved user experience, and [full documentation](https://sass-fairy.com/api/exception). Explore more about the change at [sass-fairy.com](https://sass-fairy.com).
+
+---
+
 # sass-exception
 
 [![Release Version](https://img.shields.io/npm/v/sass-exception.svg)](https://www.npmjs.com/package/sass-exception)
